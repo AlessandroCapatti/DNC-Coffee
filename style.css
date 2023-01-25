@@ -1,0 +1,25 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI';
+    font-style: normal;
+}
+
+.btn-primary {
+    background-color: #2A3342;
+    border: none;
+}
+
+.card-text
+ {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.botao {
+    visibility: hidden;
+}
