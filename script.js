@@ -1,4 +1,4 @@
- 
+ /* CARDS */
 const cards = document.querySelectorAll('.card');
 const buttons = document.querySelectorAll('.botao');
 
@@ -11,11 +11,25 @@ cards.forEach((card, index) => {
   });
 });
 
-function showModal() {
-  var modal = document.getElementById("myModal");
+/* MODAL */
+
+var modal = document.getElementById("modal");
+var btn = document.getElementById("open-modal-btn");
+var span = document.getElementById("close-modal");
+
+btn.onclick = function() {
   modal.style.display = "block";
 }
 
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 
 
