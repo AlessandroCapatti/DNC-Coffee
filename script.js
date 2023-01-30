@@ -31,5 +31,24 @@ window.onclick = function(event) {
   }
 }
 
+/* MODAL 2 */
+
+var modal2 = document.getElementById("modal2");
+var btn2 = document.getElementById("open-modal2-btn");
+var span2 = document.getElementById("close-modal2");
+
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
 
 

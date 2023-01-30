@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
     <body style="background-color: #F6F5FB;">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color:white;">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-lg" style="background-color:white;">
             <div class="container-fluid ">           
                 <a class="navbar-brand text-dark ms-4 fs-3" href="#">
                     <img src="./assets/images/logo.svg" alt="Logo" width="80" class="d-inline-block text">
@@ -22,19 +22,20 @@
                             <a class="nav-link link-black fw-bold" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item px-lg-5">
-                            <a class="nav-link link-black fw-bold" href="#">Sobre</a>
+                            <a class="nav-link link-black fw-bold" href="#" id="open-modal2-btn">Sobre</a>
                         </li>
                         <li class="nav-item px-5">
                             <a class="nav-link link-black fw-bold" href="#" id="open-modal-btn">Atendimento</a>
                         </li>
                     </ul>
-                    <a href="" class="btn btn-outline-secondary rounded-pill ms-auto text-black " id="fazerPeid"><b>Fazer pedido</b></a>
+                    <a href="" class="btn btn-outline-secondary rounded-pill ms-auto text-black " id=""><b>Fazer pedido</b></a>
                 </div>
                 <button class="btn btn-light">
                     <span class="border-1"></span>
                 </button>
             </div> 
         </nav>
+        
         <img src="./assets/images/image1.svg" class="img-fluid w-100 shadow mb-5">
 
       <!-- CARDS -->
@@ -72,7 +73,8 @@
             </div>
           </div>
         </div>
-      <!-- MODAL -->
+      
+    <!-- MODAL 1  -->
       <div id="modal">
         <div id="modal-content">
           <span id="close-modal">&times;</span>
@@ -82,6 +84,19 @@
               CEP: 12209-000 | +55 (11) 3333-8000
               </p>
             <button id="contact-btn">ENTRAR EM CONTATO</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL 2 -->
+      <div id="modal2">
+        <div id="content2">
+          <span id="close-modal2">&times;</span>
+          <div class="box-contact2">
+            <h1 id="modal-title2">Quem somos nós?</h1>
+            <p>Tudo o que fazemos procura respeitar essa conexão, desde nosso compromisso com o café de melhor qualidade do mundo até a forma como nós interagimos com nossos clientes e nossas comunidades para conduzir nosso negócio de modo responsável.
+              </p>
+              <img src="./assets/images/sobre.png" width="150" class="mx-auto">
           </div>
         </div>
       </div>
